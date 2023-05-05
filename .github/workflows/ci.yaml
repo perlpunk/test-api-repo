@@ -58,7 +58,8 @@ jobs:
 #               -d '{"name":"mighty_readme","head_sha":"'$GITHUB_SHA'","status":"completed","conclusion":"success","external_id":"42","started_at":"2023-05-04T01:14:52Z","output":{"title":"Mighty Readme report","summary":"lala","text":"some text"}}'
 
 
-      - if: ${{ env.GITHUB_EVENT_NAME == 'pull_request' }}
+#      - if: ${{ env.GITHUB_EVENT_NAME == 'pull_request' }}
+      - if: ${{ github.event.issue.pull_request }}
         run: |
             [[ "$GITHUB_EVENT_NAME" == pull_request ]] || exit
             date=$(date)
