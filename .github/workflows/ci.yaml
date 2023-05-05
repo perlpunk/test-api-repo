@@ -71,7 +71,7 @@ jobs:
       - run: |
             [[ "$GITHUB_EVENT_NAME" == pull_request ]] || exit
             date=$(date)
-            body="There is no spoon"$'\n'"Date: $date"
+            body="There is no spoon\nDate: $date"
             comments=$(curl -L \
               -H "Accept: application/vnd.github+json" \
               -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}"\
