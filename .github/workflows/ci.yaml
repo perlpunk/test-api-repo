@@ -56,13 +56,24 @@ jobs:
               https://api.github.com/repos/perlpunk/test-api-repo/check-runs \
               -d '{"name":"mighty_readme","head_sha":"'$GITHUB_SHA'","status":"completed","conclusion":"success","external_id":"42","started_at":"2023-05-04T01:14:52Z","output":{"title":"Mighty Readme report","summary":"lala","text":"some text"}}'
 
+#       - run: |
+#           echo "$GITHUB_REF_NAME"
+#           echo "${GITHUB_REF_NAME/\/merge}"
+#           [[ "$GITHUB_EVENT_NAME" == pull_request ]] && curl -L \
+#               -X POST \
+#               -H "Accept: application/vnd.github+json" \
+#               -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}"\
+#               -H "X-GitHub-Api-Version: 2022-11-28" \
+#               "https://api.github.com/repos/$GITHUB_REPOSITORY/issues/${GITHUB_REF_NAME/\/merge}/comments" \
+#               -d '{"body":"There is no spoon"}'
+
       - run: |
-          echo "$GITHUB_REF_NAME"
-          echo "${GITHUB_REF_NAME/\/merge}"
-          curl -L \
-              -X POST \
+            comments=$(curl -L \
               -H "Accept: application/vnd.github+json" \
               -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}"\
               -H "X-GitHub-Api-Version: 2022-11-28" \
-              "https://api.github.com/repos/$GITHUB_REPOSITORY/issues/${GITHUB_REF_NAME/\/merge}/comments" \
-              -d '{"body":"There is no spoon"}'
+              https://api.github.com/repos/$GITHUB_REPOSITORY/issues/${GITHUB_REF_NAME/\/merge}/comments)
+            echo "Comments: $comments"
+            comment_id=$(echo "$comments" | jq '.[] | select(.user.login == "github-actions[bot]")| select(.body | contains("There is no spoon")) | .id ' | head -1)
+            echo "id: $comment_id"
+
