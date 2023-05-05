@@ -59,7 +59,8 @@ jobs:
 
 
 #      - if: ${{ env.GITHUB_EVENT_NAME == 'pull_request' }}
-      - if: ${{ github.event.issue.pull_request }}
+      - name: Post or update comment (${{ github.event.issue.pull_request }})
+#        if: ${{ github.event.issue.pull_request }}
         run: |
             [[ "$GITHUB_EVENT_NAME" == pull_request ]] || exit
             date=$(date)
