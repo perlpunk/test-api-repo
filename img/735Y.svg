@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+height="10em" width="300">
+<rect x="-2" y="-2" width="100%" height="100%" fill="#f0f0f0" stroke="#787878" stroke-width="5"/>
+<polygon points="2,18 22,7 22,33" style="fill:cyan" />
+<circle cx="17" cy="18" r="3" stroke="#444444" stroke-width="1" fill="cyan" />
+<rect x="24" y="10" width="50" height="20" fill="cyan" stroke="cyan" stroke-width="5"/>
+
+<text x="28" y="25"  font-family="monospace" font-size="130%"><tspan>735Y</tspan>
+</text>
+<text x="0" y="35" style="font-family:monospace;">
+
+<tspan x="10" dy="1.5em" style="fill:magenta;">-</tspan><tspan  dy="0em" style="fill:grey;">
+</tspan><tspan x="10" dy="1em" style="">&#160;&#160;</tspan><tspan  dy="0em" style="fill:green;">&quot;</tspan><tspan  dy="0em" style="fill:green;">flow&#160;in&#160;block</tspan><tspan  dy="0em" style="fill:green;">&quot;</tspan><tspan  dy="0em" style="fill:grey;">
+</tspan><tspan x="10" dy="1em" style="fill:magenta;">-</tspan><tspan  dy="0em" style="">&#160;</tspan><tspan  dy="0em" style="fill:magenta;">&gt;</tspan><tspan  dy="0em" style="fill:grey;">
+</tspan><tspan x="10" dy="1em" style="fill:indent;">&#160;</tspan><tspan  dy="0em" style="fill:darkorange;">Block&#160;scalar</tspan><tspan  dy="0em" style="fill:grey;">
+</tspan><tspan x="10" dy="1em" style="fill:magenta;">-</tspan><tspan  dy="0em" style="">&#160;</tspan><tspan  dy="0em" style="fill:blue;">!!map</tspan><tspan  dy="0em" style="fill:grey;">&#160;#&#160;Block&#160;collection
+</tspan><tspan x="10" dy="1em" style="">&#160;&#160;</tspan><tspan  dy="0em" style="fill:blue;">foo</tspan><tspan  dy="0em" style="">&#160;</tspan><tspan  dy="0em" style="fill:magenta;">:</tspan><tspan  dy="0em" style="">&#160;</tspan><tspan  dy="0em" style="">bar</tspan><tspan  dy="0em" style="fill:grey;">
+</tspan></text></svg>
