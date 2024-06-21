@@ -1,0 +1,98 @@
+name: Dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+          - info
+          - warning
+          - debug
+      print_tags:
+        description: 'True to print to STDOUT'
+        required: true
+        type: boolean
+      environment:
+        description: 'Environment to run tests against'
+        type: environment
+        required: true
+      image:
+        description: Image to run on
+        type: string
+        default: registry.opensuse.org/home/tinita/branches/opensuse/templates/images/tumbleweed/containers/opensuse/example
+      repo:
+        description: Repo for cpanspec
+        type: string
+        default: https://github.com/perlpunk/cpanspec
+      branch:
+        description: cpanspec branch
+        type: string
+        default: update-perl-gh
+
+jobs:
+  print-tag:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print the input tag to STDOUT
+      run: echo  test
+
+  update:
+    runs-on: ubuntu-latest
+    container:
+      #image: registry.opensuse.org/opensuse/leap:15.5
+      image: ${{ inputs.image }}
+
+    steps:
+    - run: |
+        zypper in -y git
+        git config --global --add safe.directory '*'
+
+    - uses: actions/checkout@v4
+
+    - run: |
+        git clone ${{ inputs.repo }}
+        cd cpanspec
+        git checkout ${{ inputs.branch }}
+
+    - name: fetch cpan releases
+      run: |
+        bin/fetch-cpan.sh
+        ls -lrt ~/obs-mirror
+        ls -lrt ~/obs-mirror/cpan
+
+#    - name: configure osc
+#      env: # Set the secret as an input
+#        OSC_PASSWORD: ${{ secrets.OSC_PASSWORD }}
+#      run: |
+#        cp etc/oscrc ~/.oscrc
+#        perl -pi -wE's/PASSWORD/$ENV{OSC_PASSWORD}/' ~/.oscrc
+
+#    - name: status
+#      run: |
+#        ./bin/status-perl --data ~/obs-mirror --project home:tinita:testautoupdate --update
+#
+#
+#    - name: update
+#      run: |
+#        ./bin/update-perl \
+#            --data ~/obs-mirror \
+#            --project home:tinita:testautoupdate \
+#            --max 2
+#
+#    - name: ls
+#      run: |
+#        ls -lrt ~/obs-mirror
+#        ls -lrt ~/obs-mirror/cpan
+#
+    - uses: actions/upload-artifact@v4
+      with:
+        name: obs-mirror
+        path: |
+          ~/obs-mirror/cpan/
+          ~/obs-mirror/status/
+          ~/obs-mirror/auto.xml
+          ~/obs-mirror/perl.xml
+
