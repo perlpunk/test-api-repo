@@ -11,6 +11,7 @@ on:
           - info
           - warning
           - debug
+          - trace
       print_tags:
         description: 'True to print to STDOUT'
         required: true
