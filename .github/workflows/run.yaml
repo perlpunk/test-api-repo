@@ -60,6 +60,8 @@ jobs:
 
     - name: fetch cpan releases
       run: |
+        pwd
+        cd cpanspec
         bin/fetch-cpan.sh
         ls -lrt ~/obs-mirror
         ls -lrt ~/obs-mirror/cpan
