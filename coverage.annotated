@@ -1,0 +1,162 @@
+| --------------------------------------- | ------ | ------ |    |
+| File                                    |   stmt |  total |    |
+| --------------------------------------- | ------ | ------ |    |
+| /dev/null                               |    0.0 |    0.0 |    |
+| OpenQA/Benchmark/Stopwatch.pm           |  100.0 |  100.0 | 😃  |
+| OpenQA/Commands.pm                      |  100.0 |  100.0 | 😃  |
+| OpenQA/Exceptions.pm                    |  100.0 |  100.0 | 😃  |
+| OpenQA/Isotovideo/Backend.pm            |  100.0 |  100.0 | 😃  |
+| OpenQA/Isotovideo/CommandHandler.pm     |  100.0 |  100.0 | 😃  |
+| OpenQA/Isotovideo/Interface.pm          |  100.0 |  100.0 | 😃  |
+| OpenQA/Isotovideo/NeedleDownloader.pm   |  100.0 |  100.0 | 😃  |
+| OpenQA/Isotovideo/Runner.pm             |   98.2 |   98.2 |    |
+| OpenQA/Isotovideo/Utils.pm              |  100.0 |  100.0 | 😃  |
+| OpenQA/NamedIOSelect.pm                 |  100.0 |  100.0 | 😃  |
+| OpenQA/Qemu/BlockDev.pm                 |  100.0 |  100.0 | 😃  |
+| OpenQA/Qemu/BlockDevConf.pm             |  100.0 |  100.0 | 😃  |
+| OpenQA/Qemu/ControllerConf.pm           |  100.0 |  100.0 | 😃  |
+| OpenQA/Qemu/DriveController.pm          |  100.0 |  100.0 | 😃  |
+| OpenQA/Qemu/DriveDevice.pm              |  100.0 |  100.0 | 😃  |
+| OpenQA/Qemu/DrivePath.pm                |  100.0 |  100.0 | 😃  |
+| OpenQA/Qemu/MutParams.pm                |  100.0 |  100.0 | 😃  |
+| OpenQA/Qemu/PFlashDevice.pm             |  100.0 |  100.0 | 😃  |
+| OpenQA/Qemu/Proc.pm                     |   99.7 |   99.7 |    |
+| OpenQA/Qemu/Snapshot.pm                 |  100.0 |  100.0 | 😃  |
+| OpenQA/Qemu/SnapshotConf.pm             |  100.0 |  100.0 | 😃  |
+| OpenQA/Test/RunArgs.pm                  |  100.0 |  100.0 | 😃  |
+| autotest.pm                             |   90.4 |   90.4 |    |
+| backend/amt.pm                          |  100.0 |  100.0 | 😃  |
+| backend/baseclass.pm                    |   99.7 |   99.7 |    |
+| backend/console_proxy.pm                |  100.0 |  100.0 | 😃  |
+| backend/driver.pm                       |  100.0 |  100.0 | 😃  |
+| backend/generalhw.pm                    |   98.0 |   98.0 |    |
+| backend/ipmi.pm                         |   99.2 |   99.2 |    |
+| backend/null.pm                         |  100.0 |  100.0 | 😃  |
+| backend/qemu.pm                         |   99.7 |   99.7 |    |
+| backend/s390x.pm                        |  100.0 |  100.0 | 😃  |
+| backend/spvm.pm                         |  100.0 |  100.0 | 😃  |
+| backend/svirt.pm                        |   97.8 |   97.8 |    |
+| backend/vagrant.pm                      |  100.0 |  100.0 | 😃  |
+| backend/virt.pm                         |  100.0 |  100.0 | 😃  |
+| basetest.pm                             |   99.1 |   99.1 |    |
+| bmwqemu.pm                              |  100.0 |  100.0 | 😃  |
+| check_needles.pl                        |   67.8 |   67.8 |    |
+| check_qemu_oom                          |   80.0 |   80.0 |    |
+| commands.pm                             |   91.0 |   91.0 |    |
+| consoles/VMWare.pm                      |   99.2 |   99.2 |    |
+| consoles/VNC.pm                         |   99.8 |   99.8 |    |
+| consoles/amtSol.pm                      |   27.5 |   27.5 |    |
+| consoles/console.pm                     |  100.0 |  100.0 | 😃  |
+| consoles/localXvnc.pm                   |  100.0 |  100.0 | 😃  |
+| consoles/network_console.pm             |  100.0 |  100.0 | 😃  |
+| consoles/s3270.pm                       |   13.5 |   13.5 |    |
+| consoles/serial_screen.pm               |   95.2 |   95.2 |    |
+| consoles/sshIucvconn.pm                 |   20.0 |   20.0 |    |
+| consoles/sshSerial.pm                   |  100.0 |  100.0 | 😃  |
+| consoles/sshVirtsh.pm                   |   80.2 |   80.2 |    |
+| consoles/sshVirtshSUT.pm                |   63.6 |   63.6 |    |
+| consoles/sshXtermIPMI.pm                |   44.1 |   44.1 |    |
+| consoles/sshXtermVt.pm                  |   18.0 |   18.0 |    |
+| consoles/ssh_screen.pm                  |   95.3 |   95.3 |    |
+| consoles/video_base.pm                  |   90.2 |   90.2 |    |
+| consoles/video_stream.pm                |   85.3 |   85.3 |    |
+| consoles/virtio_terminal.pm             |  100.0 |  100.0 | 😃  |
+| consoles/vnc_base.pm                    |   97.3 |   97.3 |    |
+| cv.pm                                   |   90.3 |   90.3 |    |
+| dewebsockify                            |   81.9 |   81.9 |    |
+| distribution.pm                         |   74.7 |   74.7 |    |
+| imgsearch                               |   98.7 |   98.7 |    |
+| isotovideo                              |   99.0 |   99.0 |    |
+| lockapi.pm                              |   93.7 |   93.7 |    |
+| log.pm                                  |  100.0 |  100.0 | 😃  |
+| mmapi.pm                                |  100.0 |  100.0 | 😃  |
+| myjsonrpc.pm                            |   92.6 |   92.6 |    |
+| needle.pm                               |   87.6 |   87.6 |    |
+| ocr.pm                                  |  100.0 |  100.0 | 😃  |
+| os-autoinst-openvswitch                 |   24.3 |   24.3 |    |
+| osutils.pm                              |  100.0 |  100.0 | 😃  |
+| ppmclibs/blib/lib/tinycv.pm             |   99.1 |   99.1 |    |
+| signalblocker.pm                        |  100.0 |  100.0 | 😃  |
+| t/00-compile-check-all.t                |  100.0 |  100.0 | 😃  |
+| t/01-test_needle.t                      |  100.0 |  100.0 | 😃  |
+| t/02-test_ocr.t                         |  100.0 |  100.0 | 😃  |
+| t/03-testapi.t                          |  100.0 |  100.0 | 😃  |
+| t/04-check_vars_docu.t                  |  100.0 |  100.0 | 😃  |
+| t/04-testapi-python.t                   |  100.0 |  100.0 | 😃  |
+| t/05-distribution.t                     |  100.0 |  100.0 | 😃  |
+| t/07-commands.t                         |  100.0 |  100.0 | 😃  |
+| t/08-autotest.t                         |  100.0 |  100.0 | 😃  |
+| t/10-terminal.t                         |  100.0 |  100.0 | 😃  |
+| t/10-test-image-conversion-benchmark.t  |  100.0 |  100.0 | 😃  |
+| t/10-virtio_terminal.t                  |  100.0 |  100.0 | 😃  |
+| t/11-image-ppm.t                        |  100.0 |  100.0 | 😃  |
+| t/12-bmwqemu.t                          |  100.0 |  100.0 | 😃  |
+| t/13-osutils.t                          |  100.0 |  100.0 | 😃  |
+| t/14-debugging-tools.t                  |  100.0 |  100.0 | 😃  |
+| t/14-isotovideo.t                       |  100.0 |  100.0 | 😃  |
+| t/15-logging.t                          |  100.0 |  100.0 | 😃  |
+| t/16-send_with_fd.t                     |  100.0 |  100.0 | 😃  |
+| t/17-basetest.t                         |  100.0 |  100.0 | 😃  |
+| t/18-backend-qemu.t                     |  100.0 |  100.0 | 😃  |
+| t/18-qemu-options.t                     |  100.0 |  100.0 | 😃  |
+| t/18-qemu.t                             |  100.0 |  100.0 | 😃  |
+| t/19-isotovideo-command-processing.t    |  100.0 |  100.0 | 😃  |
+| t/20-openqa-benchmark-stopwatch-utils.t |  100.0 |  100.0 | 😃  |
+| t/20-openqa-isotovideo-utils.t          |  100.0 |  100.0 | 😃  |
+| t/21-needle-downloader.t                |  100.0 |  100.0 | 😃  |
+| t/22-svirt.t                            |  100.0 |  100.0 | 😃  |
+| t/23-baseclass.t                        |  100.0 |  100.0 | 😃  |
+| t/24-myjsonrpc-debug-var.t              |  100.0 |  100.0 | 😃  |
+| t/24-myjsonrpc-debug.t                  |  100.0 |  100.0 | 😃  |
+| t/24-myjsonrpc.t                        |  100.0 |  100.0 | 😃  |
+| t/25-spvm.t                             |  100.0 |  100.0 | 😃  |
+| t/26-serial_screen.t                    |  100.0 |  100.0 | 😃  |
+| t/26-ssh_screen.t                       |  100.0 |  100.0 | 😃  |
+| t/26-video_stream.t                     |  100.0 |  100.0 | 😃  |
+| t/27-consoles-amt_sol.t                 |  100.0 |  100.0 | 😃  |
+| t/27-consoles-local_xvnc.t              |  100.0 |  100.0 | 😃  |
+| t/27-consoles-network_console.t         |  100.0 |  100.0 | 😃  |
+| t/27-consoles-ssh_virtsh_sut.t          |  100.0 |  100.0 | 😃  |
+| t/27-consoles-vmware.t                  |  100.0 |  100.0 | 😃  |
+| t/27-consoles-vnc.t                     |  100.0 |  100.0 | 😃  |
+| t/27-consoles-vnc_base.t                |  100.0 |  100.0 | 😃  |
+| t/28-signalblocker.t                    |  100.0 |  100.0 | 😃  |
+| t/29-backend-amt.t                      |  100.0 |  100.0 | 😃  |
+| t/29-backend-driver.t                   |  100.0 |  100.0 | 😃  |
+| t/29-backend-generalhw.t                |  100.0 |  100.0 | 😃  |
+| t/29-backend-ipmi.t                     |  100.0 |  100.0 | 😃  |
+| t/29-backend-null.t                     |  100.0 |  100.0 | 😃  |
+| t/29-backend-s390x.t                    |  100.0 |  100.0 | 😃  |
+| t/29-backend-spvm.t                     |  100.0 |  100.0 | 😃  |
+| t/29-backend-svirt.t                    |  100.0 |  100.0 | 😃  |
+| t/30-mmapi.t                            |  100.0 |  100.0 | 😃  |
+| t/31-sshSerial.t                        |  100.0 |  100.0 | 😃  |
+| t/32-console_proxy.t                    |  100.0 |  100.0 | 😃  |
+| t/33-vagrant.t                          |  100.0 |  100.0 | 😃  |
+| t/34-git.t                              |  100.0 |  100.0 | 😃  |
+| t/35-imgsearch.t                        |  100.0 |  100.0 | 😃  |
+| t/36-openqa-namedioselect.t             |  100.0 |  100.0 | 😃  |
+| t/37-mutparams.t                        |  100.0 |  100.0 | 😃  |
+| t/38-carp-trace.t                       |  100.0 |  100.0 | 😃  |
+| t/44-scripts.t                          |  100.0 |  100.0 | 😃  |
+| t/99-full-stack.t                       |  100.0 |  100.0 | 😃  |
+| t/data/tests/bar/module2.pm             |  100.0 |  100.0 | 😃  |
+| t/data/tests/lib/testdistribution.pm    |  100.0 |  100.0 | 😃  |
+| t/data/tests/main.pm                    |  100.0 |  100.0 | 😃  |
+| t/data/tests/module1.pm                 |  100.0 |  100.0 | 😃  |
+| t/fake/tests/fatal.pm                   |  100.0 |  100.0 | 😃  |
+| t/fake/tests/ignore_failure.pm          |  100.0 |  100.0 | 😃  |
+| t/fake/tests/run_args.pm                |  100.0 |  100.0 | 😃  |
+| t/fake/tests/scheduler.pm               |  100.0 |  100.0 | 😃  |
+| t/fake/tests/start.pm                   |  100.0 |  100.0 | 😃  |
+| testapi.pm                              |   87.3 |   87.3 |    |
+| tools/update-deps                       |   94.6 |   94.6 |    |
+| vnctest                                 |   60.3 |   60.3 |    |
+| xt/00-tidy.t                            |  100.0 |  100.0 | 😃  |
+| xt/01-style.t                           |  100.0 |  100.0 | 😃  |
+| xt/05-pod.t                             |  100.0 |  100.0 | 😃  |
+| xt/06-pod-coverage.t                    |  100.0 |  100.0 | 😃  |
+| xt/27-make-update-deps.t                |   95.8 |   95.8 |    |
+| xt/30-make.t                            |  100.0 |  100.0 | 😃  |
+| Total                                   |   95.5 |   95.5 |    |
+| --------------------------------------- | ------ | ------ |    |
